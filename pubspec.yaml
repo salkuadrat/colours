@@ -1,7 +1,6 @@
 name: colours
 description: An extended version of Flutter Colors with more swatches and more flexibility to generate your own custom swatch.
-version: 0.0.1
-author: salkuadrat@gmail.com
+version: 0.0.1+1
 homepage: https://github.com/salkuadrat/colours
 repository: https://github.com/salkuadrat/colours
 

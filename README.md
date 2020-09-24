@@ -8,7 +8,7 @@ In your flutter project add the dependency:
 
 ```
 dependencies:
-  colour: ^0.0.1
+  colour: ^0.0.1+1
 ```
 
 or reference the git repo directly:
