@@ -1,0 +1,204 @@
+import 'package:colour/colour.dart';
+import 'package:colours/src/generator.dart';
+import 'package:flutter/material.dart';
+
+class Colours {
+  // This class is not meant to be instantiated or extended; this constructor
+  // prevents instantiation and extension.
+  Colours._();
+
+  static MaterialColor swatch(dynamic color,
+      {ColorsGeneratorAlgorithm algorithm =
+          ColorsGeneratorAlgorithm.constantin}) {
+    ColorsGenerator generator = ColorsGenerator(algorithm: algorithm);
+    return generator
+        .generate((color is Color || color is Colour) ? color : Colour(color));
+  }
+
+  static MaterialColor aliceBlue = swatch(Colour('f0f8ff'));
+  static MaterialColor antiqueWhite = swatch(Colour('faebd7'));
+  static MaterialColor aqua = swatch(Colour('00ffff'));
+  static MaterialColor aquamarine = swatch(Colour('7fffd4'));
+  static MaterialColor azure = swatch(Colour('f0ffff'));
+  static MaterialColor beige = swatch(Colour('f5f5dc'));
+  static MaterialColor bisque = swatch(Colour('ffe4c4'));
+  static MaterialColor blanchedAlmond = swatch(Colour('ffebcd'));
+  static MaterialColor blueViolet = swatch(Colour('8a2be2'));
+  static MaterialColor burlyWood = swatch(Colour('deb887'));
+  static MaterialColor burntSienna = swatch(Colour('ea7e5d'));
+  static MaterialColor cadetBlue = swatch(Colour('5f9ea0'));
+  static MaterialColor chartReuse = swatch(Colour('7fff00'));
+  static MaterialColor chocolate = swatch(Colour('d2691e'));
+  static MaterialColor coral = swatch(Colour('ff7f50'));
+  static MaterialColor cornFlowerBlue = swatch(Colour('6495ed'));
+  static MaterialColor cornSilk = swatch(Colour('fff8dc'));
+  static MaterialColor crimson = swatch(Colour('dc143c'));
+  static MaterialColor darkBlue = swatch(Colour('00008b'));
+  static MaterialColor darkCyan = swatch(Colour('008b8b'));
+  static MaterialColor darkGoldenRod = swatch(Colour('b8860b'));
+  static MaterialColor darkGreen = swatch(Colour('006400'));
+  static MaterialColor darkGrey = swatch(Colour('a9a9a9'));
+  static MaterialColor darkKhaki = swatch(Colour('bdb76b'));
+  static MaterialColor darkMagenta = swatch(Colour('8b008b'));
+  static MaterialColor darkOliveGreen = swatch(Colour('556b2f'));
+  static MaterialColor darkOrange = swatch(Colour('ff8c00'));
+  static MaterialColor darkOrchid = swatch(Colour('9932cc'));
+  static MaterialColor darkRed = swatch(Colour('8b0000'));
+  static MaterialColor darkSalmon = swatch(Colour('e9967a'));
+  static MaterialColor darkSeagreen = swatch(Colour('8fbc8f'));
+  static MaterialColor darkSlateBlue = swatch(Colour('483d8b'));
+  static MaterialColor darkSlateGrey = swatch(Colour('2f4f4f'));
+  static MaterialColor darkTurquoise = swatch(Colour('00ced1'));
+  static MaterialColor darkViolet = swatch(Colour('9400d3'));
+  static MaterialColor deepPink = swatch(Colour('ff1493'));
+  static MaterialColor deepSkyBlue = swatch(Colour('00bfff'));
+  static MaterialColor dimGrey = swatch(Colour('696969'));
+  static MaterialColor dodgerBlue = swatch(Colour('1e90ff'));
+  static MaterialColor fireBrick = swatch(Colour('b22222'));
+  static MaterialColor floralWhite = swatch(Colour('fffaf0'));
+  static MaterialColor forestGreen = swatch(Colour('228b22'));
+  static MaterialColor fuchsia = swatch(Colour('ff00ff'));
+  static MaterialColor gainsboro = swatch(Colour('dcdcdc'));
+  static MaterialColor ghostWhite = swatch(Colour('f8f8ff'));
+  static MaterialColor gold = swatch(Colour('ffd700'));
+  static MaterialColor goldenRod = swatch(Colour('daa520'));
+  static MaterialColor greenYellow = swatch(Colour('adff2f'));
+  static MaterialColor honeyDew = swatch(Colour('f0fff0'));
+  static MaterialColor hotPink = swatch(Colour('ff69b4'));
+  static MaterialColor indianRed = swatch(Colour('cd5c5c'));
+  static MaterialColor ivory = swatch(Colour('fffff0'));
+  static MaterialColor khaki = swatch(Colour('f0e68c'));
+  static MaterialColor lavender = swatch(Colour('e6e6fa'));
+  static MaterialColor lavenderBlush = swatch(Colour('fff0f5'));
+  static MaterialColor lawnGreen = swatch(Colour('7cfc00'));
+  static MaterialColor lemonChiffon = swatch(Colour('fffacd'));
+  static MaterialColor lightCoral = swatch(Colour('f08080'));
+  static MaterialColor lightCyan = swatch(Colour('e0ffff'));
+  static MaterialColor lightGoldenRodYellow = swatch(Colour('fafad2'));
+  static MaterialColor lightGrey = swatch(Colour('d3d3d3'));
+  static MaterialColor lightPink = swatch(Colour('ffb6c1'));
+  static MaterialColor lightSalmon = swatch(Colour('ffa07a'));
+  static MaterialColor lightSeaGreen = swatch(Colour('20b2aa'));
+  static MaterialColor lightSkyBlue = swatch(Colour('87cefa'));
+  static MaterialColor lightSlateGrey = swatch(Colour('778899'));
+  static MaterialColor lightSteelBlue = swatch(Colour('b0c4de'));
+  static MaterialColor lightYellow = swatch(Colour('ffffe0'));
+  static MaterialColor limeGreen = swatch(Colour('32cd32'));
+  static MaterialColor linen = swatch(Colour('faf0e6'));
+  static MaterialColor magenta = swatch(Colour('ff00ff'));
+  static MaterialColor maroon = swatch(Colour('800000'));
+  static MaterialColor mediumAquamarine = swatch(Colour('66cdaa'));
+  static MaterialColor mediumBlue = swatch(Colour('0000cd'));
+  static MaterialColor mediumOrchid = swatch(Colour('ba55d3'));
+  static MaterialColor mediumPurple = swatch(Colour('9370db'));
+  static MaterialColor mediumSeaGreen = swatch(Colour('3cb371'));
+  static MaterialColor mediumSlateBlue = swatch(Colour('7b68ee'));
+  static MaterialColor mediumSpringGreen = swatch(Colour('00fa9a'));
+  static MaterialColor mediumTurquoise = swatch(Colour('48d1cc'));
+  static MaterialColor mediumVioletRed = swatch(Colour('c71585'));
+  static MaterialColor midnightBlue = swatch(Colour('191970'));
+  static MaterialColor mintCream = swatch(Colour('f5fffa'));
+  static MaterialColor mistyRose = swatch(Colour('ffe4e1'));
+  static MaterialColor moccasin = swatch(Colour('ffe4b5'));
+  static MaterialColor navajoWhite = swatch(Colour('ffdead'));
+  static MaterialColor navy = swatch(Colour('000080'));
+  static MaterialColor oldlace = swatch(Colour('fdf5e6'));
+  static MaterialColor olive = swatch(Colour('808000'));
+  static MaterialColor olivedRab = swatch(Colour('6b8e23'));
+  static MaterialColor orangeRed = swatch(Colour('ff4500'));
+  static MaterialColor orchid = swatch(Colour('da70d6'));
+  static MaterialColor paleGoldenRod = swatch(Colour('eee8aa'));
+  static MaterialColor paleGreen = swatch(Colour('98fb98'));
+  static MaterialColor paleTurquoise = swatch(Colour('afeeee'));
+  static MaterialColor paleVioletRed = swatch(Colour('db7093'));
+  static MaterialColor papayaWhip = swatch(Colour('ffefd5'));
+  static MaterialColor peachPuff = swatch(Colour('ffdab9'));
+  static MaterialColor peru = swatch(Colour('cd853f'));
+  static MaterialColor plum = swatch(Colour('dda0dd'));
+  static MaterialColor powderBlue = swatch(Colour('b0e0e6'));
+  static MaterialColor rebeccaPurple = swatch(Colour('663399'));
+  static MaterialColor rosyBrown = swatch(Colour('bc8f8f'));
+  static MaterialColor royalBlue = swatch(Colour('4169e1'));
+  static MaterialColor saddleBrown = swatch(Colour('8b4513'));
+  static MaterialColor salmon = swatch(Colour('fa8072'));
+  static MaterialColor sandyBrown = swatch(Colour('f4a460'));
+  static MaterialColor seaGreen = swatch(Colour('2e8b57'));
+  static MaterialColor seaShell = swatch(Colour('fff5ee'));
+  static MaterialColor sienna = swatch(Colour('a0522d'));
+  static MaterialColor silver = swatch(Colour('c0c0c0'));
+  static MaterialColor skyBlue = swatch(Colour('87ceeb'));
+  static MaterialColor slateBlue = swatch(Colour('6a5acd'));
+  static MaterialColor slateGrey = swatch(Colour('708090'));
+  static MaterialColor snow = swatch(Colour('fffafa'));
+  static MaterialColor springGreen = swatch(Colour('00ff7f'));
+  static MaterialColor steelBlue = swatch(Colour('4682b4'));
+  static MaterialColor tan = swatch(Colour('d2b48c'));
+  static MaterialColor thistle = swatch(Colour('d8bfd8'));
+  static MaterialColor tomato = swatch(Colour('ff6347'));
+  static MaterialColor turquoise = swatch(Colour('40e0d0'));
+  static MaterialColor violet = swatch(Colour('ee82ee'));
+  static MaterialColor wheat = swatch(Colour('f5deb3'));
+  static MaterialColor whiteSmoke = swatch(Colour('f5f5f5'));
+  static MaterialColor yellowGreen = swatch(Colour('9acd32'));
+
+  static const MaterialColor red = Colors.red;
+  static const MaterialAccentColor redAccent = Colors.redAccent;
+  static const MaterialColor pink = Colors.pink;
+  static const MaterialAccentColor pinkAccent = Colors.pinkAccent;
+  static const MaterialColor purple = Colors.purple;
+  static const MaterialAccentColor purpleAccent = Colors.purpleAccent;
+  static const MaterialColor deepPurple = Colors.deepPurple;
+  static const MaterialAccentColor deepPurpleAccent = Colors.deepPurpleAccent;
+  static const MaterialColor indigo = Colors.indigo;
+  static const MaterialAccentColor indigoAccent = Colors.indigoAccent;
+  static const MaterialColor blue = Colors.blue;
+  static const MaterialAccentColor blueAccent = Colors.blueAccent;
+  static const MaterialColor lightBlue = Colors.lightBlue;
+  static const MaterialAccentColor lightBlueAccent = Colors.lightBlueAccent;
+  static const MaterialColor cyan = Colors.cyan;
+  static const MaterialAccentColor cyanAccent = Colors.cyanAccent;
+  static const MaterialColor teal = Colors.teal;
+  static const MaterialAccentColor tealAccent = Colors.tealAccent;
+  static const MaterialColor green = Colors.green;
+  static const MaterialAccentColor greenAccent = Colors.greenAccent;
+  static const MaterialColor lightGreen = Colors.green;
+  static const MaterialAccentColor lightGreenAccent = Colors.lightGreenAccent;
+  static const MaterialColor lime = Colors.lime;
+  static const MaterialAccentColor limeAccent = Colors.limeAccent;
+  static const MaterialColor yellow = Colors.yellow;
+  static const MaterialAccentColor yellowAccent = Colors.yellowAccent;
+  static const MaterialColor amber = Colors.amber;
+  static const MaterialAccentColor amberAccent = Colors.amberAccent;
+  static const MaterialColor orange = Colors.orange;
+  static const MaterialAccentColor orangeAccent = Colors.orangeAccent;
+  static const MaterialColor deepOrange = Colors.deepOrange;
+  static const MaterialAccentColor deepOrangeAccent = Colors.deepOrangeAccent;
+  static const MaterialColor brown = Colors.brown;
+  static const MaterialColor grey = Colors.grey;
+  static const MaterialColor blueGrey = Colors.blueGrey;
+
+  /// The material design primary color swatches, excluding grey.
+  static const List<MaterialColor> primaries = Colors.primaries;
+
+  /// The material design accent color swatches.
+  static const List<MaterialAccentColor> accents = Colors.accents;
+
+  static const Color transparent = Colors.transparent;
+  static const Color black = Colors.black;
+  static const Color black87 = Colors.black87;
+  static const Color black54 = Colors.black54;
+  static const Color black45 = Colors.black45;
+  static const Color black38 = Colors.black38;
+  static const Color black26 = Colors.black26;
+  static const Color black12 = Colors.black12;
+
+  static const Color white = Colors.white;
+  static const Color white70 = Colors.white70;
+  static const Color white60 = Colors.white60;
+  static const Color white54 = Colors.white54;
+  static const Color white38 = Colors.white38;
+  static const Color white30 = Colors.white30;
+  static const Color white24 = Colors.white24;
+  static const Color white12 = Colors.white12;
+  static const Color white10 = Colors.white10;
+}
