@@ -62,18 +62,16 @@ Color gojek900 = gojekSwatch[900];
 
 Class Colours also come with custom pre-generated swatches. 
 
-![#f0f8ff](https://via.placeholder.com/15/f0f8ff/000000?text=+) `Colours.aliceBlue`
-
-![#faebd7](https://via.placeholder.com/15/faebd7/000000?text=+) `Colours.antiqueWhite`
-
-![#00ffff](https://via.placeholder.com/15/00ffff/000000?text=+) `Colours.aqua`
-![#7fffd4](https://via.placeholder.com/15/7fffd4/000000?text=+) `Colours.aquamarine`
-![#f0ffff](https://via.placeholder.com/15/f0ffff/000000?text=+) `Colours.azure`
-![#f5f5dc](https://via.placeholder.com/15/f5f5dc/000000?text=+) `Colours.beige`
-![#ffe4c4](https://via.placeholder.com/15/ffe4c4/000000?text=+) `Colours.bisque`
-![#ffebcd](https://via.placeholder.com/15/ffebcd/000000?text=+) `Colours.blanchedAlmond`
-![#8a2be2](https://via.placeholder.com/15/8a2be2/000000?text=+) `Colours.blueViolet`
-![#deb887](https://via.placeholder.com/15/deb887/000000?text=+) `Colours.burlyWood`
+- ![#f0f8ff](https://via.placeholder.com/15/f0f8ff/000000?text=+) `Colours.aliceBlue`
+- ![#faebd7](https://via.placeholder.com/15/faebd7/000000?text=+) `Colours.antiqueWhite`
+- ![#00ffff](https://via.placeholder.com/15/00ffff/000000?text=+) `Colours.aqua`
+- ![#7fffd4](https://via.placeholder.com/15/7fffd4/000000?text=+) `Colours.aquamarine`
+- ![#f0ffff](https://via.placeholder.com/15/f0ffff/000000?text=+) `Colours.azure`
+- ![#f5f5dc](https://via.placeholder.com/15/f5f5dc/000000?text=+) `Colours.beige`
+- ![#ffe4c4](https://via.placeholder.com/15/ffe4c4/000000?text=+) `Colours.bisque`
+- ![#ffebcd](https://via.placeholder.com/15/ffebcd/000000?text=+) `Colours.blanchedAlmond`
+- ![#8a2be2](https://via.placeholder.com/15/8a2be2/000000?text=+) `Colours.blueViolet`
+- ![#deb887](https://via.placeholder.com/15/deb887/000000?text=+) `Colours.burlyWood`
 ![#ea7e5d](https://via.placeholder.com/15/ea7e5d/000000?text=+) `Colours.burntSienna`
 ![#5f9ea0](https://via.placeholder.com/15/5f9ea0/000000?text=+) `Colours.cadetBlue`
 ![#7fff00](https://via.placeholder.com/15/7fff00/000000?text=+) `Colours.chartReuse`
