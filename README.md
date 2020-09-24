@@ -250,3 +250,11 @@ Also default colors from Colors:
 - `Colours.white24`
 - `Colours.white12`
 - `Colours.white10`
+
+## Visual Studio Code Extension 
+
+You can search and install extension named ```fluttercolour``` to show color preview of Colours.
+
+![](assets/fluttercolour1.png)
+
+![](assets/fluttercolour2.png)
