@@ -152,12 +152,10 @@ packages:
   tinycolor:
     dependency: transitive
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "7141bb99a37b506de5e51416bdbeaa08329b7573"
-      url: "https://github.com/salkuadrat/tinycolor.git"
-    source: git
-    version: "1.0.3"
+      name: tinycolor
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.2"
   typed_data:
     dependency: transitive
     description:

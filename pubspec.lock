@@ -89,7 +89,7 @@ packages:
     source: hosted
     version: "1.7.0"
   pigment:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: pigment
       url: "https://pub.dartlang.org"
@@ -145,12 +145,10 @@ packages:
   tinycolor:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "3a513f9357149bfedf9b4fc7cbf36f106a99d566"
-      url: "https://github.com/salkuadrat/tinycolor.git"
-    source: git
-    version: "1.0.3"
+      name: tinycolor
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.2"
   typed_data:
     dependency: transitive
     description:

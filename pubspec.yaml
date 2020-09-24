@@ -13,9 +13,10 @@ dependencies:
   flutter:
     sdk: flutter
   
+  pigment: ^1.0.3
   colour: ^1.0.4
-  tinycolor: 
-    git: https://github.com/salkuadrat/tinycolor.git
+  tinycolor: ^1.0.2
+    # git: https://github.com/salkuadrat/tinycolor.git
   
 dev_dependencies:
   flutter_test:

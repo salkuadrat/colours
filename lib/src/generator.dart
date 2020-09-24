@@ -1,5 +1,7 @@
+import 'package:colours/src/tinycolor.dart';
 import 'package:flutter/material.dart';
-import 'package:tinycolor/tinycolor.dart';
+import 'package:tinycolor/hsl_color.dart';
+//import 'package:tinycolor/tinycolor.dart';
 
 enum ColorsGeneratorAlgorithm { traditional, constantin, buckner }
 
@@ -23,22 +25,22 @@ class ColorsGenerator {
     }
   }
 
-  TinyColor _multiply(Color color1, Color color2) {
+  CTinyColor _multiply(Color color1, Color color2) {
     int r = (color1.red * color2.red / 255).floor();
     int g = (color1.green * color2.green / 255).floor();
     int b = (color1.blue * color2.blue / 255).floor();
-    return TinyColor.fromRGB(r: r, g: g, b: b);
+    return CTinyColor.fromRGB(r: r, g: g, b: b, a: 255);
   }
 
-  List<TinyColor> _tetrad(Color color) {
-    HslColor hsl = TinyColor(color).toHsl();
+  List<CTinyColor> _tetrad(Color color) {
+    HslColor hsl = CTinyColor(color).toHsl();
     double h = hsl.h;
 
     return [
-      TinyColor(color),
-      TinyColor.fromHSL(HslColor(h: (h + 90) % 360, s: hsl.s, l: hsl.l)),
-      TinyColor.fromHSL(HslColor(h: (h + 180) % 360, s: hsl.s, l: hsl.l)),
-      TinyColor.fromHSL(HslColor(h: (h + 270) % 360, s: hsl.s, l: hsl.l))
+      CTinyColor(color),
+      CTinyColor.fromHSL(HslColor(h: (h + 90) % 360, s: hsl.s, l: hsl.l)),
+      CTinyColor.fromHSL(HslColor(h: (h + 180) % 360, s: hsl.s, l: hsl.l)),
+      CTinyColor.fromHSL(HslColor(h: (h + 270) % 360, s: hsl.s, l: hsl.l))
     ];
   }
 
@@ -46,29 +48,29 @@ class ColorsGenerator {
     return MaterialColor(
       color.value,
       <int, Color>{
-        50: TinyColor(color).lighten(52).color,
-        100: TinyColor(color).lighten(37).color,
-        200: TinyColor(color).lighten(26).color,
-        300: TinyColor(color).lighten(12).color,
-        400: TinyColor(color).lighten(6).color,
+        50: CTinyColor(color).lighten(52).color,
+        100: CTinyColor(color).lighten(37).color,
+        200: CTinyColor(color).lighten(26).color,
+        300: CTinyColor(color).lighten(12).color,
+        400: CTinyColor(color).lighten(6).color,
         500: color,
-        600: TinyColor(color).darken(6).color,
-        700: TinyColor(color).darken(12).color,
-        800: TinyColor(color).darken(18).color,
-        900: TinyColor(color).darken(24).color,
-        1100: TinyColor(color).lighten(50).saturate(30).color,
-        1200: TinyColor(color).lighten(30).saturate(30).color,
-        1400: TinyColor(color).lighten(15).saturate(15).color,
-        1700: TinyColor(color).lighten(5).saturate(5).color,
+        600: CTinyColor(color).darken(6).color,
+        700: CTinyColor(color).darken(12).color,
+        800: CTinyColor(color).darken(18).color,
+        900: CTinyColor(color).darken(24).color,
+        1100: CTinyColor(color).lighten(50).saturate(30).color,
+        1200: CTinyColor(color).lighten(30).saturate(30).color,
+        1400: CTinyColor(color).lighten(15).saturate(15).color,
+        1700: CTinyColor(color).lighten(5).saturate(5).color,
       },
     );
   }
 
   MaterialColor _constantine(Color color) {
-    TinyColor baseLight = TinyColor.fromString('#ffffff');
-    TinyColor baseDark = _multiply(color, color);
-    List<TinyColor> baseTetrad = _tetrad(color);
-    TinyColor baseTetrad4 = baseTetrad[3];
+    CTinyColor baseLight = CTinyColor.fromString('#ffffff');
+    CTinyColor baseDark = _multiply(color, color);
+    List<CTinyColor> baseTetrad = _tetrad(color);
+    CTinyColor baseTetrad4 = baseTetrad[3];
 
     return MaterialColor(
       color.value,
@@ -108,10 +110,10 @@ class ColorsGenerator {
   }
 
   MaterialColor _buckner(Color color) {
-    TinyColor baseLight = TinyColor.fromString('#ffffff');
-    TinyColor baseDark = _multiply(color, color);
-    List<TinyColor> baseTetrad = _tetrad(color);
-    TinyColor baseTetrad3 = baseTetrad[2];
+    CTinyColor baseLight = CTinyColor.fromString('#ffffff');
+    CTinyColor baseDark = _multiply(color, color);
+    List<CTinyColor> baseTetrad = _tetrad(color);
+    CTinyColor baseTetrad3 = baseTetrad[2];
 
     return MaterialColor(
       color.value,
