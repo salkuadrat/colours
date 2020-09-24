@@ -63,7 +63,9 @@ Color gojek900 = gojekSwatch[900];
 Class Colours also come with custom pre-generated swatches. 
 
 ![#f0f8ff](https://via.placeholder.com/15/f0f8ff/000000?text=+) `Colours.aliceBlue`
+
 ![#faebd7](https://via.placeholder.com/15/faebd7/000000?text=+) `Colours.antiqueWhite`
+
 ![#00ffff](https://via.placeholder.com/15/00ffff/000000?text=+) `Colours.aqua`
 ![#7fffd4](https://via.placeholder.com/15/7fffd4/000000?text=+) `Colours.aquamarine`
 ![#f0ffff](https://via.placeholder.com/15/f0ffff/000000?text=+) `Colours.azure`
