@@ -33,6 +33,7 @@ MaterialColor gojekSwatch = Colours.swatch('#00aa13');
 
 It will generate a complete material swatch colors:
 
+- ![#e0f5e3](https://via.placeholder.com/15/e0f5e3/000000?text=+) `50  [#e0f5e3]`
 - ![#b2e5b8](https://via.placeholder.com/15/b2e5b8/000000?text=+) `100 [#b2e5b8]`
 - ![#7fd489](https://via.placeholder.com/15/7fd489/000000?text=+) `200 [#7fd489]`
 - ![#4cc45a](https://via.placeholder.com/15/4cc45a/000000?text=+) `300 [#4cc45a]`
