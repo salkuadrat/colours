@@ -13,7 +13,6 @@ dependencies:
   
   pigment: ^1.0.4
   colour: ^1.0.5
-  tinycolor: ^1.0.3
   
 dev_dependencies:
   flutter_test:
