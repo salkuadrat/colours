@@ -8,7 +8,7 @@ In your flutter project add the dependency:
 
 ```
 dependencies:
-  colour: ^0.0.1+1
+  colour: ^0.0.2
 ```
 
 or reference the git repo directly:
@@ -16,7 +16,8 @@ or reference the git repo directly:
 ```
 dependencies:
   colour:
-    git: https://github.com/salkuadrat/colours.git
+    git: 
+      url: git://github.com/salkuadrat/colours.git
 ```
 
 ## Examples
